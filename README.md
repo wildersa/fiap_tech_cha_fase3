@@ -51,14 +51,14 @@ O arquivo central e foco de avaliação desta entrega é o **`pipeline_completo.
 3. **Exploração de Dados (EDA):** Entendimento de distribuições (tempos de atraso, frequências de voo, impacto de companhias aéreas e aeroportos).
 
 4. **Modelagem Supervisionada (Classificação):**
-   - Previsão de status de atraso através de Regressão Logística e XGBoost.
-   - Avaliação com métricas adequadas a dados tabulares como ROC AUC, precision e recall.
+   - Previsão de status de atraso através de XGBoost.
+   - Avaliação com métricas adequadas a dados desbalanceados: accuracy, precision, recall e F1.
 
 5. **Modelagem Não Supervisionada:**
    - Clusterização (K-Means) aliada a redução de dimensionalidade (PCA) para definir os perfis atuantes dos aeroportos na base.
 
 ## Principais Resultados
 
-- **Modelagem Supervisionada**: O modelo **XGBoost** obteve o melhor desempenho na predição de atrasos (> 0 minutos), capturando relações complexas da operação e superando a Regressão Logística no balanço entre *precision* e *recall*.
+- **Modelagem Supervisionada**: O modelo **XGBoost** foi usado para predição de atrasos (> 0 minutos), com avaliação em accuracy, precision, recall, F1 e matriz de confusão.
 - **Limitações Evidenciadas**: Apenas variáveis de agendamento (aeroporto, companhia, horário previsto) impõem um limite preditivo. Fatores essenciais da vida real, como condições climáticas e problemas de manutenção, se mostraram faltantes para explicar a totalidade da variância dos atrasos.
 - **Modelagem Não Supervisionada**: A combinação de **K-Means e PCA** conseguiu dividir os aeroportos da base em **3 perfis operacionais/clusters** distintos, com as duas componentes principais retendo mais de 83% da variância explicada.
