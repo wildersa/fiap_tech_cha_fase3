@@ -60,5 +60,5 @@ O arquivo central e foco de avaliação desta entrega é o **`pipeline_completo.
 ## Principais Resultados
 
 - **Modelagem Supervisionada**: O modelo **XGBoost** foi usado para predição de atrasos (> 0 minutos), com avaliação em accuracy, precision, recall, F1 e matriz de confusão.
-- **Limitações Evidenciadas**: Apenas variáveis de agendamento (aeroporto, companhia, horário previsto) impõem um limite preditivo. Fatores essenciais da vida real, como condições climáticas e problemas de manutenção, se mostraram faltantes para explicar a totalidade da variância dos atrasos.
+- **Limitações Evidenciadas**: Acredito que apenas variáveis de agendamento (aeroporto, companhia, horário previsto) impõem um limite preditivo. Fatores essenciais da vida real, como condições climáticas e problemas de manutenção, podem ser faltantes para explicar a totalidade da variância dos atrasos.
 - **Modelagem Não Supervisionada**: A combinação de **K-Means e PCA** conseguiu dividir os aeroportos da base em **3 perfis operacionais/clusters** distintos, com as duas componentes principais retendo mais de 83% da variância explicada.
