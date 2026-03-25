@@ -9,18 +9,32 @@ Os dados originais (em formato `.csv`) são muito grandes (`airlines.csv`, `airp
 
 ---
 
+## Requisitos
+
+- Python 3.14 (recomendado)
+- pip (gerenciador de pacotes)
+- ambiente virtual opcional (venv, virtualenv, conda)
+
 ## Como rodar o projeto
 
 1. **Clone o repositório**
 2. Vá para a raiz do repositório
-3. **Instale as dependências**
+3. **Crie e ative um ambiente virtual** (recomendado)
+
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate      # linux/mac
+   .venv\Scripts\activate       # windows
+   ```
+
+4. **Instale as dependências**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Baixe os dados**, coloque-os em uma pasta `data/`
-5. **Rode o notebook principal**
+5. **Baixe os dados**, coloque-os em uma pasta `data/`
+6. **Rode o notebook principal**
 
    ```bash
    jupyter notebook pipeline_completo.ipynb
